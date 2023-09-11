@@ -574,10 +574,10 @@ while isOwner == true do
             join(list,FarmWorldID)
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..botcuk..
-        "\n Current World : Dirahasiakan"..
+        "\n Current World : <:AiWow:1097661425436069918>"..
         "\n <a:online:1007062631787544666> Status : "..bot.status..
-        "\n <:peppertree:999318156696887378> Ready Tree : "..scanTree(BlockID+1).Ready..
-        "\n <:peppertree:999318156696887378> Unready Tree : "..scanTree(BlockID+1).Unready..
+        "\n <:peppertree:1083907585607995463> Ready Tree : "..scanTree(BlockID+1).Ready..
+        "\n <:peppertree:1083907585607995463> Unready Tree : "..scanTree(BlockID+1).Unready..
         "\n Fossil : "..tarama(3918).miktr..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
         Hazir(list)
