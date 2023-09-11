@@ -11,7 +11,7 @@ function GonWebhook(Shinuqi)
     local script = [[
     $webHookUrl = "]]..WebhookUrl..[["
     $thumbnailObject = [PSCustomObject]@{
-    url = "https://emoji.discadia.com/emojis/8abdc853-6f12-4607-b0e7-e5e3404cb509.GIF"
+    url = "https://emoji.discadia.com/emojis/ced2ff3d-752f-42b9-8ea1-b0e3c4c5ff5f.GIF"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
     $title = 'ANANDA SABER - ROTATION'
@@ -271,7 +271,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 100 then
+    if inventory:getItemCount(BlockID+1) >= 150 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -283,11 +283,11 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : Rahasia negara"..
+        "\n Current World : <:AiWow:1097661425436069918>"..
         "\n <a:online:1007062631787544666> Status : "..bot.status..
-        "\n <:crystal_tree_seed:1012630107715797073> Dropped Seed : "..floats(BlockID+1).ucanlar..
-	"\n <:crystal_tree_seed:1012630107715797073> Dropped Wind : "..floats(WindID).ucanlar..
-        "\n <:crystal_tree_seed:1012630107715797073> Dropped Block : "..floats(BlockID).ucanlar..
+        "\n <:crystal_tree_seed:1083907585607995463> PROFIT SEED : "..floats(BlockID+1).ucanlar..
+	"\n <:crystal_tree_seed:1083907585607995463> PROFIT WIND : "..floats(WindID).ucanlar..
+        "\n <:crystal_tree_seed:1083907585607995463> PROFIT BLOCK : "..floats(BlockID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(WindID) >= 10 then
@@ -302,11 +302,11 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : Rahasia negara"..
+        "\n Current World : <:AiWow:1097661425436069918>"..
         "\n <a:online:1007062631787544666> Status : "..bot.status..
-        "\n <:crystal_tree_seed:1012630107715797073> Dropped Seed : "..floats(BlockID+1).ucanlar..
-        "\n <:crystal_tree_seed:1012630107715797073> Dropped Wind : "..floats(WindID).ucanlar..
-        "\n <:crystal_tree_seed:1012630107715797073> Dropped Block : "..floats(BlockID).ucanlar..
+        "\n <:crystal_tree_seed:1083907585607995463> PROFIT SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:crystal_tree_seed:1083907585607995463> PROFIT WIND : "..floats(WindID).ucanlar..
+        "\n <:crystal_tree_seed:1083907585607995463> PROFIT BLOCK : "..floats(BlockID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
     if inventory:getItemCount(PackitemID) > PackDropCount then
@@ -321,9 +321,9 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : Rahasia negara"..
+        "\n Current World : <:AiWow:1097661425436069918>"..
         "\n <a:online:1007062631787544666> Status : "..bot.status..
-        "\n <:gems:994218103032520724> Dropped Pack : "..floats(PackitemID).ucanlar..
+        "\n <:gems:994218103032520724> SIGNAL JAMMER : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
 end
