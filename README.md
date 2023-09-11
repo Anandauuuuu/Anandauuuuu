@@ -271,7 +271,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 150 then
+    if inventory:getItemCount(BlockID+1) >= 50 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
