@@ -11,7 +11,7 @@ function GonWebhook(Shinuqi)
     local script = [[
     $webHookUrl = "]]..WebhookUrl..[["
     $thumbnailObject = [PSCustomObject]@{
-    url = "https://emoji.discadia.com/emojis/a644acd0-9b1b-46e6-890d-7366ef53b645.GIF"
+    url = "https://emoji.discadia.com/emojis/67258b8d-2f83-42ba-87b2-be643de8df32.GIF"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
     $title = 'ANANDA SABER - ROTATION'
