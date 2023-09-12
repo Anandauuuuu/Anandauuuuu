@@ -11,7 +11,7 @@ function GonWebhook(Shinuqi)
     local script = [[
     $webHookUrl = "]]..WebhookUrl..[["
     $thumbnailObject = [PSCustomObject]@{
-    url = "https://emoji.discadia.com/emojis/67258b8d-2f83-42ba-87b2-be643de8df32.GIF"
+    url = "https://emoji.discadia.com/emojis/f7a5b91e-2d1b-40df-9980-cd44e62542aa.GIF"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
     $title = 'ANANDA SABER - ROTATION'
@@ -244,7 +244,7 @@ function harvest(list)
                 Reconnect(list)    
             end
         end
-        if inventory:getItemCount(BlockID) >= 150 then
+        if inventory:getItemCount(BlockID) >= 50 then
             break
         end
     end
@@ -271,7 +271,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 50 then
+    if inventory:getItemCount(BlockID+1) >= 20 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -584,7 +584,7 @@ while isOwner == true do
         while AgacHazir == 1 do
             sleep(3000) 
             Reconnect(list)
-            if inventory:getItemCount(BlockID) <= 150 then
+            if inventory:getItemCount(BlockID) <= 50 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
@@ -592,7 +592,7 @@ while isOwner == true do
                 harvest(list)
                 sleep(1000)
             end
-            if inventory:getItemCount(BlockID) >= 150 then
+            if inventory:getItemCount(BlockID) >= 50 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
@@ -619,7 +619,7 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 50 then
+            if inventory:getItemCount(BlockID+1) >= 20 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
