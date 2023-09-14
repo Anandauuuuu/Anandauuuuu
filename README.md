@@ -271,7 +271,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 20 then
+    if inventory:getItemCount(BlockID+1) >= 100 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -584,7 +584,7 @@ while isOwner == true do
         while AgacHazir == 1 do
             sleep(3000) 
             Reconnect(list)
-            if inventory:getItemCount(BlockID) <= 50 then
+            if inventory:getItemCount(BlockID) <= 150 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
@@ -592,7 +592,7 @@ while isOwner == true do
                 harvest(list)
                 sleep(1000)
             end
-            if inventory:getItemCount(BlockID) >= 50 then
+            if inventory:getItemCount(BlockID) >= 150 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
@@ -619,7 +619,7 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 20 then
+            if inventory:getItemCount(BlockID+1) >= 100 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
