@@ -271,7 +271,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 20 then
+    if inventory:getItemCount(BlockID+1) >= 40 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -283,14 +283,14 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : "..world.name..
-        "\n <a:online:1007062631787544666> Level : "..bot.level..
+        "\n Current World : <:AiWow:1097661425436069918>"..
+        "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:crystal_tree_seed:1083907585607995463> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT BLOCK : "..floats(BlockID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(WindID) >= 5 then
+    if inventory:getItemCount(WindID) >= 10 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
@@ -302,8 +302,8 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : "..world.name..
-        "\n <a:online:1007062631787544666> Level : "..bot.level..
+        "\n Current World : <:AiWow:1097661425436069918>"..
+        "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT SEED : "..floats(BlockID+1).ucanlar..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT BLOCK : "..floats(BlockID).ucanlar..
@@ -321,8 +321,8 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : "..world.name..
-        "\n <a:online:1007062631787544666> Level : "..bot.level..
+        "\n Current World : <:AiWow:1097661425436069918>"..
+        "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:gems:994218103032520724> SIGNAL JAMMER : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
@@ -573,9 +573,9 @@ while isOwner == true do
         if world.name ~= list then
             join(list,FarmWorldID)
         end
-        GonWebhook("<:growbot:992058196439072770> Name : "..botcuk..
+        GonWebhook("<:growbot:992058196439072770> Name : "..botcuk.. "..bot.level.. 
         "\n World : "..world.name..
-        "\n <a:online:1007062631787544666> Status : "..bot.stasus..
+        "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:peppertree:1083907585607995463> Ready Tree : "..scanTree(BlockID+1).Ready..
         "\n <:peppertree:1083907585607995463> Unready Tree : "..scanTree(BlockID+1).Unready..
         "\n Fossil : "..tarama(3918).miktr..
@@ -626,7 +626,7 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-	    if inventory:getItemCount(WindID) >= 5 then
+	    if inventory:getItemCount(WindID) >= 7 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
