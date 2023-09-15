@@ -290,7 +290,7 @@ function Dropf(list)
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT BLOCK : "..floats(BlockID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(WindID) >= 10 then
+    if inventory:getItemCount(WindID) >= 5 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
@@ -626,7 +626,7 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-	    if inventory:getItemCount(WindID) >= 7 then
+	    if inventory:getItemCount(WindID) >= 5 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
