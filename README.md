@@ -600,7 +600,7 @@ while isOwner == true do
                 PNB(list)
                 sleep(1000)
             end
-            if inventory:getItemCount(BlockID+1) > 0 and PLantSeed == "yes" then
+            if inventory:getItemCount(BlockID+1) > 0 and PLantSeed == "no" then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
