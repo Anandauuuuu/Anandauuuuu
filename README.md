@@ -46,9 +46,9 @@ function GonWebhook(Shinuqi)
 end
 
 function join(a,b) 
-    sleep(3000)
+    sleep(2000)
     bot:sendPacket(3,"action|join_request\nname|"..a.."|"..b.."\ninvitedWorld|0")
-    sleep(6000)
+    sleep(2000)
     Dunyadami = tostring(world.name)
     if Dunyadami == "" or Dunyadami == "EXIT" then
     	join(a,b)
@@ -269,9 +269,9 @@ end
 function Dropf(list)
     while bot.gem_count > pricepack do
         bot:sendPacket(2, "action|buy\nitem|"..packname)
-        sleep(3000) -- you can change delay
+        sleep(1000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 40 then
+    if inventory:getItemCount(BlockID+1) >= 20 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -283,14 +283,14 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : <:AiWow:1097661425436069918>"..
+        "\n Current World : "..string.upper.. 
         "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:crystal_tree_seed:1083907585607995463> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT BLOCK : "..floats(BlockID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(WindID) >= 10 then
+    if inventory:getItemCount(WindID) >= 5 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
@@ -302,10 +302,10 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : <:AiWow:1097661425436069918>"..
+        "\n Current World : "..string.upper.. 
         "\n <a:online:1007062631787544666> Status : "..bot.status..
-        "\n <:crystal_tree_seed:1083907585607995463> PROFIT SEED : "..floats(BlockID+1).ucanlar..
-        "\n <:crystal_tree_seed:1083907585607995463> PROFIT WIND : "..floats(WindID).ucanlar..
+        "\n <:seed_a:1083907585607995463> PROFIT SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:wind_a:1083907585607995463> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:crystal_tree_seed:1083907585607995463> PROFIT BLOCK : "..floats(BlockID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
@@ -321,7 +321,7 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : <:AiWow:1097661425436069918>"..
+        "\n Current World : "..string.upper.. 
         "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:gems:994218103032520724> SIGNAL JAMMER : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
@@ -403,14 +403,14 @@ function PNB(list)
     Reconnect(list)
     bot.auto_collect = true
     bot:findPath(BotPxz,BotPyz)
-    sleep(2000)
+    sleep(1000)
     while inventory:getItemCount(BlockID) > 0 do
         Reconnect(list)
         AnlikYer()
 
         if BotPxz ~= Botx and BotPyz ~= BotY then
             bot:findPath(BotPxz,BotPyz)
-            sleep(2000)
+            sleep(1000)
             AnlikYer()
         end
         if tilealfg(Botx-1,Boty).tilefg == 0 then 
@@ -619,14 +619,14 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 40 then
+            if inventory:getItemCount(BlockID+1) >= 20 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end
-	    if inventory:getItemCount(WindID) >= 7 then
+	    if inventory:getItemCount(WindID) >= 5 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
