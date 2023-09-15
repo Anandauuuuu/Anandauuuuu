@@ -573,8 +573,8 @@ while isOwner == true do
         if world.name ~= list then
             join(list,FarmWorldID)
         end
-        GonWebhook("<:growbot:992058196439072770> Bot Name : "..botcuk..
-        "\n Current World : <:AiWow:1097661425436069918>"..world.name..
+        GonWebhook("<:growbot:992058196439072770> Name : "..botcuk.. "..bot.level.. 
+        "\n World : "..world.name..
         "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:peppertree:1083907585607995463> Ready Tree : "..scanTree(BlockID+1).Ready..
         "\n <:peppertree:1083907585607995463> Unready Tree : "..scanTree(BlockID+1).Unready..
@@ -619,7 +619,7 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 40 then
+            if inventory:getItemCount(BlockID+1) >= 20 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
