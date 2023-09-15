@@ -574,7 +574,7 @@ while isOwner == true do
             join(list,FarmWorldID)
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..botcuk..
-        "\n Current World : <:AiWow:1097661425436069918>"..
+        "\n Current World : "..string.upper.. 
         "\n <a:online:1007062631787544666> Status : "..bot.status..
         "\n <:peppertree:1083907585607995463> Ready Tree : "..scanTree(BlockID+1).Ready..
         "\n <:peppertree:1083907585607995463> Unready Tree : "..scanTree(BlockID+1).Unready..
