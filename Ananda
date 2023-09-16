@@ -11,14 +11,14 @@ function GonWebhook(Shinuqi)
     local script = [[
     $webHookUrl = "]]..WebhookUrl..[["
     $thumbnailObject = [PSCustomObject]@{
-    url = "https://cdn.discordapp.com/emojis/1016295109970645022.gif?size=80&quality=lossless"
+    url = "https://emoji.discadia.com/emojis/eb6c7262-7e6c-4d91-a058-1087ff29a47b.GIF"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
     $title = 'ANANDA SABER'
     $description = "**]]..Shinuqi..[[**"
   
     $footer = [PSCustomObject]@{
-        icon_url = "https://cdn.discordapp.com/emojis/978628955907170314.gif?size=96&quality=lossless"
+        icon_url = "https://emoji.discadia.com/emojis/eb6c7262-7e6c-4d91-a058-1087ff29a47b.GIF"
         text = "]].."ANANDA SABER | Date : "..(os.date"%d/%m/%y":upper().." Hour : ")..os.date("%I")..":"..os.date("%M").." "..os.date("%p"):upper()..[["
     }
   
