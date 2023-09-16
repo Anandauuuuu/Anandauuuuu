@@ -282,12 +282,12 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : "..world.name..
-        "\n <a:online:1007062631787544666> Status : "..bot.level..
-        "\n <:pepper_tree_seed:1012630107715797073> Dropped Seed : "..floats(BlockID+1).ucanlar..
-	"\n <:pepper_tree_seed:1012630107715797073> Dropped Wind : "..floats(WindID).ucanlar..
-        "\n <:pepper_tree_seed:1012630107715797073> Dropped Block : "..floats(BlockID).ucanlar..
+        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
+        "\n <:nejobeng:1151850121701642281> WORLD : "..world.name..
+        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
+        "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
+	"\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(WindID) >= 5 then
@@ -301,12 +301,12 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : "..world.name..
-        "\n <a:online:1007062631787544666> Status : "..bot.level..
-        "\n <:pepper_tree_seed:1012630107715797073> Dropped Seed : "..floats(BlockID+1).ucanlar..
-        "\n <:pepper_tree_seed:1012630107715797073> Dropped Wind : "..floats(WindID).ucanlar..
-        "\n <:pepper_tree_seed:1012630107715797073> Dropped Block : "..floats(BlockID).ucanlar..
+        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
+        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
+        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
+        "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
     if inventory:getItemCount(PackitemID) > PackDropCount then
@@ -320,10 +320,10 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : World Save WL"..
-        "\n <a:online:1007062631787544666> Status : "..bot.status..
-        "\n <:gems:994218103032520724> Dropped Pack : "..floats(PackitemID).ucanlar..
+        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
+        "\n <:sjammer:1142067636931412048> WORLD : "..world.name.. 
+        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level.. 
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
 end
@@ -398,8 +398,6 @@ end
 
 BotPxz = BotPx-1
 BotPyz = BotPy-1
-BotPyz = BotPy-2
-BotPyz = BotPy-2
 function PNB(list)
     PickaxeControl()
     Reconnect(list)
@@ -575,12 +573,12 @@ while isOwner == true do
         if world.name ~= list then
             join(list,FarmWorldID)
         end
-        GonWebhook("<:growbot:992058196439072770> Bot Name : "..botcuk..
-        "\n Current World : "..world.name..
-        "\n <a:online:1007062631787544666> Status : "..bot.level..
-        "\n <:peppertree:999318156696887378> Ready Tree : "..scanTree(BlockID+1).Ready..
-        "\n <:peppertree:999318156696887378> Unready Tree : "..scanTree(BlockID+1).Unready..
-        "\n Fossil : "..tarama(3918).miktr..
+        GonWebhook("<:growbot:992058196439072770> NAME : "..botcuk..
+        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
+        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
+        "\n <:gscan:1083907585607995463> READY   : "..scanTree(BlockID+1).Ready..
+        "\n <:gscan:1083907585607995463> UNREADY : "..scanTree(BlockID+1).Unready..
+        "\n <:gscan:1083907585607995463> FOSSIL  : "..tarama(3918).miktr..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
         Hazir(list)
         while AgacHazir == 1 do
