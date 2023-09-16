@@ -244,7 +244,7 @@ function harvest(list)
                 Reconnect(list)    
             end
         end
-        if inventory:getItemCount(BlockID) >= 100 then
+        if inventory:getItemCount(BlockID) >= 50 then
             break
         end
     end
@@ -283,7 +283,7 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
-        "\n <:nejobeng:1151850121701642281> WORLD : "..world.name..
+        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
         "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
@@ -584,7 +584,7 @@ while isOwner == true do
         while AgacHazir == 1 do
             sleep(3000) 
             Reconnect(list)
-            if inventory:getItemCount(BlockID) <= 100 then
+            if inventory:getItemCount(BlockID) <= 50 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
