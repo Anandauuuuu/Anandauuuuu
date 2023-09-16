@@ -398,8 +398,8 @@ end
 
 BotPxz = BotPx-1
 BotPyz = BotPy-1
-BotPyz = BotPy+1
-BotPyz = BotPy+1
+BotPyz = BotPy-2
+BotPyz = BotPy-2
 function PNB(list)
     PickaxeControl()
     Reconnect(list)
