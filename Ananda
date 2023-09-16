@@ -14,12 +14,12 @@ function GonWebhook(Shinuqi)
     url = "https://cdn.discordapp.com/emojis/1016295109970645022.gif?size=80&quality=lossless"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
-    $title = 'Didistore - Rotation PABRIK'
+    $title = 'ANANDA SABER'
     $description = "**]]..Shinuqi..[[**"
   
     $footer = [PSCustomObject]@{
         icon_url = "https://cdn.discordapp.com/emojis/978628955907170314.gif?size=96&quality=lossless"
-        text = "]].."BUY SC ? JOIN DIDI STORE | Date : "..(os.date"%d/%m/%y":upper().." Hour : ")..os.date("%I")..":"..os.date("%M").." "..os.date("%p"):upper()..[["
+        text = "]].."ANANDA SABER | Date : "..(os.date"%d/%m/%y":upper().." Hour : ")..os.date("%I")..":"..os.date("%M").." "..os.date("%p"):upper()..[["
     }
   
     $embedObject = [PSCustomObject]@{
@@ -244,7 +244,7 @@ function harvest(list)
                 Reconnect(list)    
             end
         end
-        if inventory:getItemCount(BlockID) >= 150 then
+        if inventory:getItemCount(BlockID) >= 100 then
             break
         end
     end
@@ -271,7 +271,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 100 then
+    if inventory:getItemCount(BlockID+1) >= 20 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -283,14 +283,14 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : World save Seed"..
-        "\n <a:online:1007062631787544666> Status : "..bot.status..
+        "\n Current World : "..world.name..
+        "\n <a:online:1007062631787544666> Status : "..bot.level..
         "\n <:pepper_tree_seed:1012630107715797073> Dropped Seed : "..floats(BlockID+1).ucanlar..
 	"\n <:pepper_tree_seed:1012630107715797073> Dropped Wind : "..floats(WindID).ucanlar..
         "\n <:pepper_tree_seed:1012630107715797073> Dropped Block : "..floats(BlockID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(WindID) >= 10 then
+    if inventory:getItemCount(WindID) >= 5 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
@@ -302,8 +302,8 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..bot.name..
-        "\n Current World : World save WIND Essence"..
-        "\n <a:online:1007062631787544666> Status : "..bot.status..
+        "\n Current World : "..world.name..
+        "\n <a:online:1007062631787544666> Status : "..bot.level..
         "\n <:pepper_tree_seed:1012630107715797073> Dropped Seed : "..floats(BlockID+1).ucanlar..
         "\n <:pepper_tree_seed:1012630107715797073> Dropped Wind : "..floats(WindID).ucanlar..
         "\n <:pepper_tree_seed:1012630107715797073> Dropped Block : "..floats(BlockID).ucanlar..
@@ -398,6 +398,8 @@ end
 
 BotPxz = BotPx-1
 BotPyz = BotPy-1
+BotPyz = BotPy+1
+BotPyz = BotPy+1
 function PNB(list)
     PickaxeControl()
     Reconnect(list)
@@ -574,8 +576,8 @@ while isOwner == true do
             join(list,FarmWorldID)
         end
         GonWebhook("<:growbot:992058196439072770> Bot Name : "..botcuk..
-        "\n Current World : Dirahasiakan"..
-        "\n <a:online:1007062631787544666> Status : "..bot.status..
+        "\n Current World : "..world.name..
+        "\n <a:online:1007062631787544666> Status : "..bot.level..
         "\n <:peppertree:999318156696887378> Ready Tree : "..scanTree(BlockID+1).Ready..
         "\n <:peppertree:999318156696887378> Unready Tree : "..scanTree(BlockID+1).Unready..
         "\n Fossil : "..tarama(3918).miktr..
@@ -584,7 +586,7 @@ while isOwner == true do
         while AgacHazir == 1 do
             sleep(3000) 
             Reconnect(list)
-            if inventory:getItemCount(BlockID) <= 150 then
+            if inventory:getItemCount(BlockID) <= 100 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
@@ -592,7 +594,7 @@ while isOwner == true do
                 harvest(list)
                 sleep(1000)
             end
-            if inventory:getItemCount(BlockID) >= 150 then
+            if inventory:getItemCount(BlockID) >= 20 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
@@ -619,14 +621,14 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 100 then
+            if inventory:getItemCount(BlockID+1) >= 20 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end
-	    if inventory:getItemCount(WindID) >= 10 then
+	    if inventory:getItemCount(WindID) >= 5 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
