@@ -244,7 +244,7 @@ function harvest(list)
                 Reconnect(list)    
             end
         end
-        if inventory:getItemCount(BlockID) >= 50 then
+        if inventory:getItemCount(BlockID) >= 100 then
             break
         end
     end
@@ -584,7 +584,7 @@ while isOwner == true do
         while AgacHazir == 1 do
             sleep(3000) 
             Reconnect(list)
-            if inventory:getItemCount(BlockID) <= 50 then
+            if inventory:getItemCount(BlockID) <= 100 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
@@ -592,7 +592,7 @@ while isOwner == true do
                 harvest(list)
                 sleep(1000)
             end
-            if inventory:getItemCount(BlockID) >= 20 then
+            if inventory:getItemCount(BlockID) >= 100 then
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
