@@ -282,12 +282,12 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
-        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
-        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
-        "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
-	"\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(1828).ucanlar..
+        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        "\n <:world:1154550372547973180> WORLD : "..world.name..
+        "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
+        "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
+	"\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(WindID) >= 5 then
@@ -301,12 +301,12 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
-        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
-        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
-        "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(1828).ucanlar..
+        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        "\n <:world:1154550372547973180> WORLD : "..world.name..
+        "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
+        "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(1828) >= 1 then
@@ -320,12 +320,12 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
-        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
-        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
-        "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(1828).ucanlar..
+        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        "\n <:world:1154550372547973180> WORLD : "..world.name..
+        "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
+        "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
     if inventory:getItemCount(PackitemID) > PackDropCount then
@@ -339,9 +339,9 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
-        "\n <:sjammer:1142067636931412048> WORLD : "..world.name.. 
-        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level.. 
+        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        "\n <:world:1154550372547973180> WORLD : "..world.name.. 
+        "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level.. 
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
@@ -592,9 +592,9 @@ while isOwner == true do
         if world.name ~= list then
             join(list,FarmWorldID)
         end
-        GonWebhook("<:growbot:992058196439072770> NAME : "..botcuk..
-        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
-        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
+        GonWebhook("<:botonline:1154550333398323210> NAME : "..botcuk..
+        "\n <:world:1154550372547973180> WORLD : "..world.name..
+        "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:gscan:1083907585607995463> READY   : "..scanTree(BlockID+1).Ready..
         "\n <:gscan:1083907585607995463> UNREADY : "..scanTree(BlockID+1).Unready..
         "\n <:gscan:1083907585607995463> FOSSIL  : "..tarama(3918).miktr..
