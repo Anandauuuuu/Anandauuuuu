@@ -318,7 +318,7 @@ function Dropf(list)
         while (inventory:getItemCount(WindID) > 0) do
             Reconnectdropseed()
             sleep(500)
-            bot:drop(WindID, inventory:getItemCount(WindID))
+            bot:drop(BmcID, inventory:getItemCount(BmcID))
             sleep(500)
             bot:moveLeft()
         end
