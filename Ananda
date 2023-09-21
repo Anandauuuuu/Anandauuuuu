@@ -288,7 +288,7 @@ function Dropf(list)
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(BmcID).ucanla.. 
+        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(1828).ucanla.. 
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(WindID) >= 5 then
@@ -308,17 +308,17 @@ function Dropf(list)
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(BmcID).ucanla.. 
+        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(1828).ucanla.. 
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(BmcID) >= 1 then
+    if inventory:getItemCount(1828) >= 1 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
-        while (inventory:getItemCount(WindID) > 0) do
+        while (inventory:getItemCount(1828) > 0) do
             Reconnectdropseed()
             sleep(500)
-            bot:drop(BmcID, inventory:getItemCount(BmcID))
+            bot:drop(BmcID, inventory:getItemCount(1828))
             sleep(500)
             bot:moveLeft()
         end
@@ -328,7 +328,7 @@ function Dropf(list)
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(BmcID).ucanla.. 
+        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(1828).ucanla.. 
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
     if inventory:getItemCount(PackitemID) > PackDropCount then
