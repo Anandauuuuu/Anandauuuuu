@@ -287,7 +287,7 @@ function Dropf(list)
         "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(1828).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(WindID) >= 5 then
@@ -306,7 +306,7 @@ function Dropf(list)
         "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(1828).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(1828) >= 1 then
@@ -325,7 +325,7 @@ function Dropf(list)
         "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
-        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(1828).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
     if inventory:getItemCount(PackitemID) > PackDropCount then
