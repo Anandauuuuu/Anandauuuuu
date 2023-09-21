@@ -655,7 +655,7 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BmcID) >= 1 then
+            if inventory:getItemCount(1828) >= 1 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
