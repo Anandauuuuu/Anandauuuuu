@@ -288,6 +288,7 @@ function Dropf(list)
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(1828).ucanla.. 
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
     if inventory:getItemCount(WindID) >= 5 then
@@ -307,6 +308,27 @@ function Dropf(list)
         "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
         "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(1828).ucanla.. 
+        "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
+    end
+    if inventory:getItemCount(1828) >= 1 then
+        bot.auto_collect = false
+        Reconnectdropwind()
+        join(StorageWorld,StorageWorldSeedID)
+        while (inventory:getItemCount(WindID) > 0) do
+            Reconnectdropseed()
+            sleep(500)
+            bot:drop(WindID, inventory:getItemCount(WindID))
+            sleep(500)
+            bot:moveLeft()
+        end
+        GonWebhook("<:growbot:992058196439072770> NAME : "..bot.name..
+        "\n <:sjammer:1142067636931412048> WORLD : "..world.name..
+        "\n <:nejobeng:1151850121701642281> LEVEL : "..bot.level..
+        "\n <:DL:1083731540732805131> PROFIT SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT WIND : "..floats(WindID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BLOCK : "..floats(BlockID).ucanlar..
+        "\n <:DL:1083731540732805131> PROFIT BMC : "..floats(1828).ucanla.. 
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
     if inventory:getItemCount(PackitemID) > PackDropCount then
@@ -627,6 +649,13 @@ while isOwner == true do
                 end
             end
 	    if inventory:getItemCount(WindID) >= 5 then
+                sleep(1000)
+                Dropf()
+                if world.name ~= list then
+                    join(list,FarmWorldID)
+                end
+            end
+            if inventory:getItemCount(1828) >= 1 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
