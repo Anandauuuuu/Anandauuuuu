@@ -282,7 +282,7 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -301,7 +301,7 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -320,7 +320,7 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -339,7 +339,7 @@ function Dropf(list)
             sleep(500)
             bot:moveLeft()
         end
-        GonWebhook("<:botonline:1154550333398323210> NAME : "..bot.name..
+        GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name.. 
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level.. 
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
@@ -595,9 +595,9 @@ while isOwner == true do
         GonWebhook("<:botonline:1154550333398323210> NAME : "..botcuk..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
-        "\n <:gscan:1083907585607995463> READY   : "..scanTree(BlockID+1).Ready..
-        "\n <:gscan:1083907585607995463> UNREADY : "..scanTree(BlockID+1).Unready..
-        "\n <:gscan:1083907585607995463> FOSSIL  : "..tarama(3918).miktr..
+        "\n <:seed:1154550220802240552> READY   : "..scanTree(BlockID+1).Ready..
+        "\n <:seed:1154550220802240552> UNREADY : "..scanTree(BlockID+1).Unready..
+        "\n <:fossil:1154555048781697114> FOSSIL  : "..tarama(3918).miktr..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
         Hazir(list)
         while AgacHazir == 1 do
