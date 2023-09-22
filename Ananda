@@ -803,6 +803,7 @@ while isOwner == true do
         dinlenme = dinlenme + 1
         if restBot == "yes" and dinlenme == restWorldComplete then 
             sleep(1000)
+            bot.auto_reconnect = false
             getBot():disconnect()
             sleep(360000)
             getBot():connect()
