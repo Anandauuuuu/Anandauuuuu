@@ -705,6 +705,10 @@ while isOwner == true do
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
+        "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
+        "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
+        "\n <:emoji_14:1154570062217367685> LONGEVITY CAKE : "..floats(1096).ucanlar..
+        "\n <:emoji_15:1154570097596321845> HARMONY CAKE : "..floats(1058).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
         Hazir(list)
         while AgacHazir == 1 do
@@ -760,6 +764,34 @@ while isOwner == true do
                 end
             end
             if inventory:getItemCount(1828) >= 1 then
+                sleep(1000)
+                Dropf()
+                if world.name ~= list then
+                    join(list,FarmWorldID)
+                end
+            end
+            if inventory:getItemCount(1094) >= 20 then
+                sleep(1000)
+                Dropf()
+                if world.name ~= list then
+                    join(list,FarmWorldID)
+                end
+            end 
+            if inventory:getItemCount(1098) >= 20 then
+                sleep(1000)
+                Dropf()
+                if world.name ~= list then
+                    join(list,FarmWorldID)
+                end
+            end 
+            if inventory:getItemCount(1096) >= 20 then
+                sleep(1000)
+                Dropf()
+                if world.name ~= list then
+                    join(list,FarmWorldID)
+                end
+            end 
+            if inventory:getItemCount(1058) >= 20 then
                 sleep(1000)
                 Dropf()
                 if world.name ~= list then
