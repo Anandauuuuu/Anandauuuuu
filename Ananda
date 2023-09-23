@@ -7,6 +7,8 @@ PickaxeWorld = string.upper(PickaxeWorld)
 PickaxeWorldID = string.upper(PickaxeWorldID)
 bot.collect_range=4
 bot.auto_collect = false
+bot.auto_tutorial = true
+bot.auto_accept = true
 function GonWebhook(Shinuqi)
     local script = [[
     $webHookUrl = "]]..WebhookUrl..[["
@@ -750,49 +752,49 @@ while isOwner == true do
                 end
             end
             if inventory:getItemCount(BlockID+1) >= 20 then
-                sleep(1000)
+                sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end
 	    if inventory:getItemCount(WindID) >= 5 then
-                sleep(1000)
+                sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end
             if inventory:getItemCount(1828) >= 1 then
-                sleep(1000)
+                sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end
             if inventory:getItemCount(1094) >= 20 then
-                sleep(1000)
+                sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end 
             if inventory:getItemCount(1098) >= 20 then
-                sleep(1000)
+                sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end 
             if inventory:getItemCount(1096) >= 20 then
-                sleep(1000)
+                sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end 
             if inventory:getItemCount(1058) >= 20 then
-                sleep(1000)
+                sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
@@ -805,7 +807,7 @@ while isOwner == true do
             sleep(1000)
             bot.auto_reconnect = false
             getBot():disconnect()
-            sleep(360000)
+            sleep(960000)
             getBot():connect()
             bot.auto_reconnect = true
             sleep(3000)
