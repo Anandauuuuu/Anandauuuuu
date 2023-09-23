@@ -811,7 +811,7 @@ while isOwner == true do
             sleep(660000)
             getBot():connect()
             bot.auto_reconnect = true
-            sleep(36000) 
+            sleep(36000)
             dinlenme = 0
         end
     end
