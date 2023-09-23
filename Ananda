@@ -99,7 +99,7 @@ end
 
 function AnlikYer()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
+        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -119,7 +119,7 @@ end
 
 function Reconnect(list)
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
+        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -142,7 +142,7 @@ end
 
 function Reconnectdropseed()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
+        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -164,7 +164,7 @@ function Reconnectdropseed()
 end
 function Reconnectdropwind()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
+        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -187,7 +187,7 @@ end
 
 function Reconnectdroppack()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
+        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -491,7 +491,7 @@ end
 
 function OnlineControl()
     if bot.status ~= 1 then
-        GonWebhook("<@" .. YourDiscordid .. ">".."\n<:growbot:992058196439072770> | Bot Name : "..bot.name.."\n<:mega:984686541383290940> | Information : Bot Is Offline Trying To Reconnect.... \n<:red_circle:987661002868936774> | Status : Offline ")
+        GonWebhook("<@" .. everyone .. ">".."\n<:growbot:992058196439072770> | Bot Name : "..bot.name.."\n<:mega:984686541383290940> | Information : Bot Is Offline Trying To Reconnect.... \n<:red_circle:987661002868936774> | Status : Offline ")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
