@@ -210,12 +210,13 @@ end
 
 function harvest(list) 
     Reconnect(list)
-    bot.auto_collect = true
+    bot.auto_collect = false
     for i, tile in ipairs(world:getTiles()) do
         Reconnect(list)
         if tile.fg == SeedID and tile:canHarvest() then
             Reconnect(list)
             bot:findPath(tile.x,tile.y)
+            bot.auto_collect = true
             sleep(delayHarvest)
             if bot.status == 1 then
                 if world:getTile(tile.x,tile.y).fg == SeedID or world:getTile(tile.x,tile.y).bg == SeedID then
