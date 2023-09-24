@@ -55,11 +55,13 @@ function join(a,b)
     Dunyadami = tostring(world.name)
     if Dunyadami == "" or Dunyadami == "EXIT" then
     	join(a,b)
+        warps(worldSafe,doorID)
     end
     AnlikYer()
     if Dunyadami ~= "" or Dunyadami ~= "EXIT" then
         if world:getTile(Botx,Boty).fg == 6 then
             join(a,b)
+            warps(worldSafe,doorID)
         end
     end
 end
