@@ -5,9 +5,10 @@ PackDropWorld = string.upper(PackDropWorld)
 PackDropWorldID = string.upper(PackDropWorldID)
 PickaxeWorld = string.upper(PickaxeWorld)
 PickaxeWorldID = string.upper(PickaxeWorldID)
+GrowID = string.upper(GrowID)
+Pass = string.upper(Pass)
 bot.collect_range=4
 bot.auto_collect = false
-bot.auto_tutorial = true
 bot.auto_accept = true
 function GonWebhook(Shinuqi)
     local script = [[
@@ -808,6 +809,7 @@ while isOwner == true do
             sleep(1000)
             bot.auto_reconnect = false
             getBot():disconnect()
+            updateBot(GrowID,Pass)
             sleep(660000)
             getBot():connect()
             bot.auto_reconnect = true
