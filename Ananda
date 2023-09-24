@@ -810,7 +810,7 @@ while isOwner == true do
             bot.auto_reconnect = false
             getBot():disconnect()
             updateBot(GrowID,Pass)
-            sleep(660000)
+            sleep(1000)
             getBot():connect()
             bot.auto_reconnect = true
             sleep(36000)
