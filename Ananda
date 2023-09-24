@@ -823,7 +823,7 @@ while isOwner == true do
             sleep(1000)
             bot.auto_reconnect = false
             getBot():disconnect()
-            sleep(3600000)
+            sleep(760000)
             getBot():connect()
             bot.auto_reconnect = true
             sleep(10000)
