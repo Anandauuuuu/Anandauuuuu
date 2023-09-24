@@ -63,9 +63,6 @@ function join(a,b)
     end
 end
 
-worldSafe = "DXGPXBGRRQ1"
-doorID = "M11"
-
 function warps(worldName,id)
     while getBot():getWorld().name ~= worldName:upper() do
         getBot():warp(worldName:upper())
