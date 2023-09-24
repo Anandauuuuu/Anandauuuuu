@@ -62,6 +62,22 @@ function join(a,b)
     end
 end
 
+worldSafe = "ANPIANO0"
+doorID = "M11"
+
+function warps(worldName,id)
+    while getBot():getWorld().name ~= worldName:upper() do
+        getBot():warp(worldName:upper())
+        sleep(5000)
+    end
+    if getBot():getWorld().name == worldName:upper() then
+        getBot():warp(worldName:upper(),id)
+        sleep(3000)
+    end
+end
+
+warps(worldSafe,doorID)
+
 function scanTree(id)
     countReady = 0
     countUnready = 0
@@ -807,10 +823,10 @@ while isOwner == true do
             sleep(1000)
             bot.auto_reconnect = false
             getBot():disconnect()
-            sleep(360000)
+            sleep(3600000)
             getBot():connect()
             bot.auto_reconnect = true
-            sleep(30000)
+            sleep(10000)
             dinlenme = 0
         end
     end
