@@ -5,6 +5,8 @@ PackDropWorld = string.upper(PackDropWorld)
 PackDropWorldID = string.upper(PackDropWorldID)
 PickaxeWorld = string.upper(PickaxeWorld)
 PickaxeWorldID = string.upper(PickaxeWorldID)
+worldSafe = "ANPIANO0"
+doorID = "M11"
 bot.collect_range=4
 bot.auto_collect = false
 bot.auto_accept = true
@@ -61,9 +63,6 @@ function join(a,b)
         end
     end
 end
-
-worldSafe = "ANPIANO0"
-doorID = "M11"
 
 function warps(worldName,id)
     while getBot():getWorld().name ~= worldName:upper() do
