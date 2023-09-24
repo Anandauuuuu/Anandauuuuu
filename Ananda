@@ -231,6 +231,7 @@ function harvest(list)
             Reconnect(list)
             bot:findPath(tile.x,tile.y)
             bot.auto_collect = true
+            getBot():say("AnandaSaber")
             sleep(delayHarvest)
             if bot.status == 1 then
                 if world:getTile(tile.x,tile.y).fg == SeedID or world:getTile(tile.x,tile.y).bg == SeedID then
