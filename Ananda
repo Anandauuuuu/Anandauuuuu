@@ -55,13 +55,11 @@ function join(a,b)
     Dunyadami = tostring(world.name)
     if Dunyadami == "" or Dunyadami == "EXIT" then
     	join(a,b)
-        warps(worldSafe,doorID)
     end
     AnlikYer()
     if Dunyadami ~= "" or Dunyadami ~= "EXIT" then
         if world:getTile(Botx,Boty).fg == 6 then
             join(a,b)
-            warps(worldSafe,doorID)
         end
     end
 end
@@ -829,6 +827,16 @@ while isOwner == true do
             bot.auto_reconnect = true
             sleep(10000)
             dinlenme = 0
-        end
+        end 
+    end
+end
+
+function join(a,b) 
+    sleep(3000)
+    bot:sendPacket(3,"action|join_request\nname|"..a.."|"..b.."\ninvitedWorld|0")
+    sleep(6000)
+    Dunyadami = tostring(world.name)
+    if Dunyadami == "" or Dunyadami == "EXIT" then
+    	join(a,b)
     end
 end
