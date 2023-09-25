@@ -818,13 +818,7 @@ while isOwner == true do
             Hazir(list)
         end
         dinlenme = dinlenme + 1
-        if restBot == "yes" and dinlenme == restWorldComplete then 
-            sleep(1000)
-            bot.auto_reconnect = false
-            getBot():disconnect()
-            sleep(760000)
-            getBot():connect()
-            bot.auto_reconnect = true
+        if restBot == "yes" and dinlenme == restWorldComplete then
             sleep(10000)
             dinlenme = 0
         end 
