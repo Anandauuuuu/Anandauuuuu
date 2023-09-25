@@ -819,6 +819,7 @@ while isOwner == true do
         end
         dinlenme = dinlenme + 1
         if restBot == "yes" and dinlenme == restWorldComplete then
+            getBot():say("/Dance")
             sleep(10000)
             dinlenme = 0
         end 
