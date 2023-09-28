@@ -300,7 +300,6 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
-        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -324,7 +323,6 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
-        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -348,7 +346,6 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
-        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -372,7 +369,6 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
-        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -396,7 +392,6 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
-        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
@@ -420,7 +415,6 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
-        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
