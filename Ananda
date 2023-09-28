@@ -300,10 +300,12 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
+        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
         "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
@@ -323,10 +325,12 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
+        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
         "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
@@ -346,10 +350,12 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
+        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
         "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
@@ -369,10 +375,12 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
+        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
         "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
@@ -392,10 +400,12 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
+        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
         "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
@@ -415,10 +425,12 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
+        "\n <:online:1156775520411861082> ROTASI MODE : ON
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
         "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
@@ -442,6 +454,7 @@ function Dropf(list)
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
         "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:cake:1154550453628063796> BALANCE CAKE : "..floats(1828).ucanlar..
         "\n <:emoji_12:1154569988640866425> PEACE CAKE : "..floats(1094).ucanlar..
         "\n <:emoji_12:1154570027148791938> PROSPERITY CAKE : "..floats(1098).ucanlar..
