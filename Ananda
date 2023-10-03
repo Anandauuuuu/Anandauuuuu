@@ -338,7 +338,6 @@ function Dropf(list)
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
-        "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:world:1154550372547973180> WORLD : "..world.name.. 
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level.. 
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
