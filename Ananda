@@ -325,7 +325,7 @@ function Dropf(list)
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
-    end
+    end 
     if inventory:getItemCount(PackitemID) > PackDropCount then
         bot.auto_collect = false
         Reconnectdroppack()
@@ -659,7 +659,7 @@ while isOwner == true do
         if restBot == "yes" and dinlenme == restWorldComplete then
             getBot():say("/Dance")
             getBot():say("buy all lgrid 100/1")
-            sleep(960000)
+            sleep(360000)
             dinlenme = 0
         end 
     end
