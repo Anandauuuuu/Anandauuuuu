@@ -325,13 +325,6 @@ function Dropf(list)
         "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
-    end 
-    if bot.level >= 20 then
-        bot.auto_collect = false
-        sleep(1000)
-        bot.auto_reconnect = false
-        getBot():disconnect()
-        sleep(99999999999999)
     end
     if inventory:getItemCount(PackitemID) > PackDropCount then
         bot.auto_collect = false
