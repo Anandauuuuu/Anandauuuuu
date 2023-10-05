@@ -326,6 +326,17 @@ function Dropf(list)
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
+    if bot.level >= 20 then
+        bot.auto_collect = false
+        sleep(1000)
+        bot.auto_reconnect = false
+        getBot():disconnect()
+        sleep(99999999999999)
+        GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name.. (ROTASI OFF @Anandasaber)
+        "\n <:world:1154550372547973180> WORLD : "..world.name.. 
+        "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level.. 
+        "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
+    end
     if inventory:getItemCount(PackitemID) > PackDropCount then
         bot.auto_collect = false
         Reconnectdroppack()
@@ -659,7 +670,7 @@ while isOwner == true do
         if restBot == "yes" and dinlenme == restWorldComplete then
             getBot():say("/Dance")
             getBot():say("buy all lgrid 100/1")
-            sleep(360000)
+            sleep(960000)
             dinlenme = 0
         end 
     end
