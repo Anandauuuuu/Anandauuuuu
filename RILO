@@ -14,14 +14,14 @@ function GonWebhook(Shinuqi)
     local script = [[
     $webHookUrl = "]]..WebhookUrl..[["
     $thumbnailObject = [PSCustomObject]@{
-    url = "https://emoji.discadia.com/emojis/eb6c7262-7e6c-4d91-a058-1087ff29a47b.GIF"
+    url = "https://emoji.discadia.com/emojis/68d9cb22-089d-4b9c-9fe7-a2c26d4f23df.gif"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
     $title = 'CLarke : <:online:1156775520411861082>'
     $description = "**]]..Shinuqi..[[**"
   
     $footer = [PSCustomObject]@{
-        icon_url = "https://emoji.discadia.com/emojis/eb6c7262-7e6c-4d91-a058-1087ff29a47b.GIF"
+        icon_url = "https://emoji.discadia.com/emojis/68d9cb22-089d-4b9c-9fe7-a2c26d4f23df.gif"
         text = "]].."ANANDA SABER | Date : "..(os.date"%d/%m/%y":upper().." Hour : ")..os.date("%I")..":"..os.date("%M").." "..os.date("%p"):upper()..[["
     }
   
