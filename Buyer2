@@ -302,8 +302,8 @@ function Dropf(list)
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
-        "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
-	"\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:seed:1160151442271772742> SEED : "..floats(BlockID+1).ucanlar..
+	"\n <:wateress:1160151408952221810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
@@ -321,8 +321,8 @@ function Dropf(list)
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
-        "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
-        "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:seed:1160151442271772742> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:wateress:1160151408952221810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end 
@@ -593,11 +593,11 @@ while isOwner == true do
         GonWebhook("<:botonline:1154550333398323210> NAME : "..botcuk..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
-        "\n <:ready:1154561644777713675> READY   : "..scanTree(BlockID+1).Ready..
-        "\n <:unready:1154561680961982495> UNREADY : "..scanTree(BlockID+1).Unready..
+        "\n <:tree:1160151471132786839> READY   : "..scanTree(BlockID+1).Ready..
+        "\n <:tree:1160151471132786839> UNREADY : "..scanTree(BlockID+1).Unready..
         "\n <:fossil:1154555048781697114> FOSSIL  : "..tarama(3918).miktr..
-        "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
-        "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
+        "\n <:seed:1160151442271772742> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:wateress:1160151408952221810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
         Hazir(list)
