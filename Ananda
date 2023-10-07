@@ -288,7 +288,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 50 then
+    if inventory:getItemCount(BlockID+1) >= 30 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -340,6 +340,8 @@ function Dropf(list)
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name.. 
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level.. 
+       "\n <:seed:1154550220802240552> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:wind:1154550299315404810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
@@ -639,7 +641,7 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 50 then
+            if inventory:getItemCount(BlockID+1) >= 30 then
                 sleep(500)
                 Dropf()
                 if world.name ~= list then
@@ -659,7 +661,7 @@ while isOwner == true do
         if restBot == "yes" and dinlenme == restWorldComplete then
             getBot():say("/Dance")
             getBot():say("buy all lgrid 100/1")
-            sleep(360000)
+            sleep(90000)
             dinlenme = 0
         end 
     end
