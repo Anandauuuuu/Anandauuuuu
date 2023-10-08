@@ -307,7 +307,7 @@ function Dropf(list)
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(WindID) >= 5 then
+    if inventory:getItemCount(WindID) >= 150 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
