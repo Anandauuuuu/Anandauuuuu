@@ -17,11 +17,11 @@ function GonWebhook(Shinuqi)
     url = "https://emoji.discadia.com/emojis/eb6c7262-7e6c-4d91-a058-1087ff29a47b.GIF"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
-    $title = 'ANANDA SABER ROTASI : <:online:1156775520411861082>'
+    $title = 'FTANK ROTASI : <:online:1156775520411861082>'
     $description = "**]]..Shinuqi..[[**"
   
     $footer = [PSCustomObject]@{
-        icon_url = "https://emoji.discadia.com/emojis/eb6c7262-7e6c-4d91-a058-1087ff29a47b.GIF"
+        icon_url = "https://emoji.discadia.com/emojis/dff8bdf0-736b-4ff8-972e-596cb6c027dd.GIF"
         text = "]].."ANANDA SABER | Date : "..(os.date"%d/%m/%y":upper().." Hour : ")..os.date("%I")..":"..os.date("%M").." "..os.date("%p"):upper()..[["
     }
   
