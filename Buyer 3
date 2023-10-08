@@ -17,7 +17,7 @@ function GonWebhook(Shinuqi)
     url = "https://emoji.discadia.com/emojis/eb6c7262-7e6c-4d91-a058-1087ff29a47b.GIF"
     }
     $color = Get-Random -Minimum 0 -Maximum 16777215
-    $title = 'FTANK ROTASI : <:online:1156775520411861082>'
+    $title = 'PEPPER ROTASI : <:online:1156775520411861082>'
     $description = "**]]..Shinuqi..[[**"
   
     $footer = [PSCustomObject]@{
@@ -302,7 +302,7 @@ function Dropf(list)
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
-        "\n <:seed:1160151442271772742> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:seed:1160563887981219940> SEED : "..floats(BlockID+1).ucanlar..
 	"\n <:wateress:1160151408952221810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
@@ -321,7 +321,7 @@ function Dropf(list)
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
-        "\n <:seed:1160151442271772742> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:seed:1160563887981219940> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wateress:1160151408952221810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
@@ -340,6 +340,8 @@ function Dropf(list)
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name.. 
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level.. 
+        "\n <:seed:1160563887981219940> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:wateress:1160151408952221810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
@@ -593,10 +595,10 @@ while isOwner == true do
         GonWebhook("<:botonline:1154550333398323210> NAME : "..botcuk..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
         "\n <:botlevel:1154550409344589916> LEVEL : "..bot.level..
-        "\n <:tree:1160151471132786839> READY   : "..scanTree(BlockID+1).Ready..
-        "\n <:tree:1160151471132786839> UNREADY : "..scanTree(BlockID+1).Unready..
+        "\n <:tree:1160563855336939600> READY   : "..scanTree(BlockID+1).Ready..
+        "\n <:tree:1160563855336939600> UNREADY : "..scanTree(BlockID+1).Unready..
         "\n <:fossil:1154555048781697114> FOSSIL  : "..tarama(3918).miktr..
-        "\n <:seed:1160151442271772742> SEED : "..floats(BlockID+1).ucanlar..
+        "\n <:seed:1160563887981219940> SEED : "..floats(BlockID+1).ucanlar..
         "\n <:wateress:1160151408952221810> WIND : "..floats(WindID).ucanlar..
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
         "\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
