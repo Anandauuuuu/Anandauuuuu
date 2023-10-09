@@ -297,6 +297,7 @@ function Dropf(list)
             sleep(500)
             bot:drop(BlockID+1, inventory:getItemCount(BlockID+1))
             sleep(500)
+            getBot():say("Rotasi by Ananda Saber")
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
@@ -316,6 +317,7 @@ function Dropf(list)
             sleep(500)
             bot:drop(WindID, inventory:getItemCount(WindID))
             sleep(500)
+            getBot():say("Rotasi by Ananda Saber")
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
@@ -335,6 +337,7 @@ function Dropf(list)
             sleep(500)
             bot:drop(PackitemID,inventory:getItemCount(PackitemID))
             sleep(500)
+            getBot():say("Rotasi by Ananda Saber")
             bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
@@ -658,8 +661,8 @@ while isOwner == true do
         dinlenme = dinlenme + 1
         if restBot == "yes" and dinlenme == restWorldComplete then
             getBot():say("/Dance")
-            getBot():say("buy all lgrid 100/1")
-            sleep(360000)
+            getBot():say("Rotasi by Ananda Saber")
+            sleep(9000)
             dinlenme = 0
         end 
     end
