@@ -288,7 +288,7 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 120 then
+    if inventory:getItemCount(BlockID+1) >= 160 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
@@ -308,7 +308,7 @@ function Dropf(list)
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(WindID) >= 5 then
+    if inventory:getItemCount(WindID) >= 30 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
@@ -642,14 +642,14 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 120 then
+            if inventory:getItemCount(BlockID+1) >= 160 then
                 sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end
-	    if inventory:getItemCount(WindID) >= 5 then
+	    if inventory:getItemCount(WindID) >= 30 then
                 sleep(500)
                 Dropf()
                 if world.name ~= list then
