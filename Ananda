@@ -664,7 +664,7 @@ while isOwner == true do
         if restBot == "yes" and dinlenme == restWorldComplete then
             getBot():say("/Dance")
             getBot():say("buy all lgrid 100/1")
-            sleep(9000)
+            sleep(200000)
             dinlenme = 0
         end 
     end
