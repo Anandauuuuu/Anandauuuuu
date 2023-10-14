@@ -113,7 +113,7 @@ end
 
 function AnlikYer()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
+        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -133,7 +133,7 @@ end
 
 function Reconnect(list)
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
+        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -156,7 +156,7 @@ end
 
 function Reconnectdropseed()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
+        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -178,7 +178,7 @@ function Reconnectdropseed()
 end
 function Reconnectdropwind()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
+        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -201,7 +201,7 @@ end
 
 function Reconnectdroppack()
     if bot.status ~= 1 then
-        GonWebhook("Bot Offline ".."<@" .. everyone .. ">")
+        GonWebhook("Bot Offline ".."<@" .. YourDiscordid .. ">")
         while bot.status ~= 1 do
             bot:connect()
             sleep(10000)
@@ -288,13 +288,14 @@ function Dropf(list)
         bot:sendPacket(2, "action|buy\nitem|"..packname)
         sleep(3000) -- you can change delay
     end
-    if inventory:getItemCount(BlockID+1) >= 30 then
+    if inventory:getItemCount(BlockID+1) >= 50 then
         bot.auto_collect = false
         Reconnectdropseed()
         join(StorageWorld,StorageWorldSeedID)
         while (inventory:getItemCount(BlockID+1) > 0) do
             Reconnectdropseed()
             sleep(500)
+            bot:moveRight()
             bot:drop(BlockID+1, inventory:getItemCount(BlockID+1))
             sleep(500)
             bot:moveLeft()
@@ -307,13 +308,14 @@ function Dropf(list)
         "\n <:gems:994218103032520724> PACK : "..floats(PackitemID).ucanlar..
 	"\n <:jam:987145988470898758> UpTime Bot : "..SecondTT(os.difftime(os.time(), startT)))
     end
-    if inventory:getItemCount(WindID) >= 5 then
+    if inventory:getItemCount(WindID) >= 20 then
         bot.auto_collect = false
         Reconnectdropwind()
         join(StorageWorld,StorageWorldSeedID)
         while (inventory:getItemCount(WindID) > 0) do
             Reconnectdropseed()
             sleep(500)
+            bot:moveRight()
             bot:drop(WindID, inventory:getItemCount(WindID))
             sleep(500)
             bot:moveLeft()
@@ -333,6 +335,7 @@ function Dropf(list)
         while inventory:getItemCount(PackitemID) > PackDropCount do
             Reconnectdroppack()
             sleep(500)
+            bot:moveRight()
             bot:drop(PackitemID,inventory:getItemCount(PackitemID))
             sleep(500)
             bot:moveLeft()
@@ -641,14 +644,14 @@ while isOwner == true do
                     join(list,FarmWorldID)
                 end
             end
-            if inventory:getItemCount(BlockID+1) >= 30 then
+            if inventory:getItemCount(BlockID+1) >= 50 then
                 sleep(500)
                 Dropf()
                 if world.name ~= list then
                     join(list,FarmWorldID)
                 end
             end
-	    if inventory:getItemCount(WindID) >= 5 then
+	    if inventory:getItemCount(WindID) >= 20 then
                 sleep(500)
                 Dropf()
                 if world.name ~= list then
