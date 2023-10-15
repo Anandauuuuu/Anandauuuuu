@@ -420,11 +420,12 @@ end
 
 BotPxz = BotPx-1
 BotPyz = BotPy-1
+BotPuz = BotPy-2
 function PNB(list)
     PickaxeControl()
     Reconnect(list)
     bot.auto_collect = true
-    bot:findPath(BotPxz,BotPyz)
+    bot:findPath(BotPxz,BotPyz,BotPuz)
     sleep(2000)
     while inventory:getItemCount(BlockID) > 0 do
         Reconnect(list)
@@ -450,6 +451,12 @@ function PNB(list)
         if tilealfg(Botx-1,Boty-1).tilefg == 0 then
 	if bot:isInTile(Botx,Boty) then
             bot:place(Botx-1,Boty-1,BlockID)
+            sleep(delayplace) 
+	    end
+        end
+        if tilealfg(Botx-1,Boty-2).tilefg == 0 then
+	if bot:isInTile(Botx,Boty) then
+            bot:place(Botx-1,Boty-2,BlockID)
             sleep(delayplace) 
 	    end
         end
@@ -486,6 +493,18 @@ function PNB(list)
             end
 	    if bot:isInTile(Botx,Boty) then
             bot:hit(Botx-1,Boty-1) 
+            sleep(delaybreak) 
+	    end
+        end
+        while (tilealfg(Botx-1,Boty-2).tilefg ~= 0 or tilealbg(Botx-1,Boty-2).tilebg ~= 0) do
+            Reconnect(list)
+            if BotPxz ~= Botx and BotPuz ~= BotY then
+                bot:findPath(BotPxz,BotPuz)
+                sleep(1000)
+                AnlikYer()
+            end
+	    if bot:isInTile(Botx,Boty) then
+            bot:hit(Botx-1,Boty-2) 
             sleep(delaybreak) 
 	    end
         end
