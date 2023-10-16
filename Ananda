@@ -420,8 +420,8 @@ BotPyz = BotPy-1
 BotPuz = BotPy-2
 BotPnz = BotPx
 BotPmz = BotPy
-Bot+1z = BotPx+1
-Bot+2z = BotPx+2
+BotP+1z = BotPx+1
+BotP+2z = BotPx+2
 BotP-1z = BotPy-1
 BotP-2z = BotPy-2
 function PNB(list)
