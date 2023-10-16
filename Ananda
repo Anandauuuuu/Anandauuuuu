@@ -418,7 +418,6 @@ end
 BotPxz = BotPx-1
 BotPyz = BotPy-1
 BotPuz = BotPy-2
-BotPjz = BitPx+1
 function PNB(list)
     PickaxeControl()
     Reconnect(list)
