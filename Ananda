@@ -418,6 +418,8 @@ end
 BotPxz = BotPx-1
 BotPyz = BotPy-1
 BotPuz = BotPy-2
+BotPhz = BotPx
+BotPjz = BitPx+1
 function PNB(list)
     PickaxeControl()
     Reconnect(list)
@@ -526,6 +528,54 @@ function PNB(list)
             end
 	    if bot:isInTile(Botx,Boty) then
             bot:hit(Botx-1,Boty-2) 
+            sleep(delaybreak) 
+	    end
+        end
+        while (tilealfg(Botx,Boty-2).tilefg ~= 0 or tilealbg(Botx,Boty-2).tilebg ~= 0) do
+            Reconnect(list)
+            if BotPxz ~= Botx and BotPuz ~= BotY then
+                bot:findPath(BotPhz,BotPuz)
+                sleep(1000)
+                AnlikYer()
+            end
+	    if bot:isInTile(Botx,Boty) then
+            bot:hit(Botx,Boty-2) 
+            sleep(delaybreak) 
+	    end
+        end
+        while (tilealfg(Botx,Boty-1).tilefg ~= 0 or tilealbg(Botx,Boty-1).tilebg ~= 0) do
+            Reconnect(list)
+            if BotPxz ~= Botx and BotPuz ~= BotY then
+                bot:findPath(BotPhz,BotPyz)
+                sleep(1000)
+                AnlikYer()
+            end
+	    if bot:isInTile(Botx,Boty) then
+            bot:hit(Botx,Boty-1) 
+            sleep(delaybreak) 
+	    end
+        end
+        while (tilealfg(Botx+1,Boty-2).tilefg ~= 0 or tilealbg(Botx+1,Boty-2).tilebg ~= 0) do
+            Reconnect(list)
+            if BotPxz ~= Botx and BotPuz ~= BotY then
+                bot:findPath(BotPjz,BotPuz)
+                sleep(1000)
+                AnlikYer()
+            end
+	    if bot:isInTile(Botx,Boty) then
+            bot:hit(Botx+1,Boty-2) 
+            sleep(delaybreak) 
+	    end
+        end
+        while (tilealfg(Botx+1,Boty-1).tilefg ~= 0 or tilealbg(Botx+1,Boty-1).tilebg ~= 0) do
+            Reconnect(list)
+            if BotPxz ~= Botx and BotPuz ~= BotY then
+                bot:findPath(BotPhz,BotPyz)
+                sleep(1000)
+                AnlikYer()
+            end
+	    if bot:isInTile(Botx,Boty) then
+            bot:hit(Botx+1,Boty-1) 
             sleep(delaybreak) 
 	    end
         end
