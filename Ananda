@@ -286,7 +286,7 @@ end
 function Dropf(list)
     while bot.gem_count > pricepack do
         bot:sendPacket(2, "action|buy\nitem|"..packname)
-        sleep(3000) -- you can change delay
+        sleep(1000) -- you can change delay
     end
     if inventory:getItemCount(BlockID+1) >= 130 then
         bot.auto_collect = false
@@ -296,7 +296,8 @@ function Dropf(list)
             Reconnectdropseed()
             sleep(500)
             bot:drop(BlockID+1, inventory:getItemCount(BlockID+1))
-            sleep(500)
+            sleep(100)
+            bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
@@ -314,7 +315,8 @@ function Dropf(list)
             Reconnectdropseed()
             sleep(500)
             bot:drop(WindID, inventory:getItemCount(WindID))
-            sleep(500)
+            sleep(100)
+            bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name..
@@ -332,7 +334,8 @@ function Dropf(list)
             Reconnectdroppack()
             sleep(500)
             bot:drop(PackitemID,inventory:getItemCount(PackitemID))
-            sleep(500)
+            sleep(100)
+            bot:moveLeft()
         end
         GonWebhook("<:botonline:1154550333398323210> GROWID : "..bot.name..
         "\n <:world:1154550372547973180> WORLD : "..world.name.. 
