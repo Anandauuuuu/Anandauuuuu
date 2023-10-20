@@ -310,7 +310,7 @@ function Dropf(list)
     if inventory:getItemCount(WindID) >= 10 then
         bot.auto_collect = false
         Reconnectdropwind()
-        join(StorageWorld,StorageWorldSeedID)
+        join(PackDropWorld,PackDropWorldID)
         while (inventory:getItemCount(WindID) > 0) do
             Reconnectdropseed()
             sleep(500)
