@@ -5,8 +5,6 @@ PackDropWorld = string.upper(PackDropWorld)
 PackDropWorldID = string.upper(PackDropWorldID)
 PickaxeWorld = string.upper(PickaxeWorld)
 PickaxeWorldID = string.upper(PickaxeWorldID)
-worldSafe = "ANPIANO0"
-doorID = "M11"
 bot.collect_range=4
 bot.auto_collect = false
 bot.auto_accept = true
@@ -63,19 +61,6 @@ function join(a,b)
         end
     end
 end
-
-function warps(worldName,id)
-    while getBot():getWorld().name ~= worldName:upper() do
-        getBot():warp(worldName:upper())
-        sleep(5000)
-    end
-    if getBot():getWorld().name == worldName:upper() then
-        getBot():warp(worldName:upper(),id)
-        sleep(3000)
-    end
-end
-
-warps(worldSafe,doorID)
 
 function scanTree(id)
     countReady = 0
